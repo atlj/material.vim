@@ -38,6 +38,8 @@ let s:cyan      = '#89ddff'
 let s:orange    = '#f78c6c'
 let s:indigo    = '#BB80B3'
 let s:br_yellow = '#f7f937'
+let s:sp_yellow = '#f1c40f'
+let s:br_cyan = '#16a085'
 
 function! s:HL(group, fg, bg, attr)
   let l:attr = a:attr
@@ -100,23 +102,23 @@ call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
 
 " Standard Syntax
 call s:HL('Comment',                        s:gray4,    '',         'italic')
-call s:HL('Constant',                       s:yellow,   '',         '')
+call s:HL('Constant',                       s:sp_yellow,   '',         '')
 call s:HL('String',                         s:red,    '',         '')
 call s:HL('Character',                      s:red,    '',         '')
 call s:HL('Identifier',                     s:red,      '',         'none')
-call s:HL('Function',                       s:br_yellow,     '',         '')
-call s:HL('Statement',                      s:purple,   '',         'none')
+call s:HL('Function',                       s:sp_yellow,     '',         '')
+call s:HL('Statement',                      s:br_cyan,   '',         'none')
 call s:HL('Operator',                       s:cyan,     '',         '')
 call s:HL('PreProc',                        s:cyan,     '',         '')
 call s:HL('Include',                        s:blue,     '',         '')
-call s:HL('Define',                         s:yellow,   '',         'none')
+call s:HL('Define',                         s:sp_yellow,   '',         'none')
 call s:HL('Macro',                          s:purple,   '',         '')
 call s:HL('Type',                           s:yellow,   '',         'none')
 call s:HL('Structure',                      s:cyan,     '',         '')
 call s:HL('Special',                        s:indigo,   '',         '')
 call s:HL('Underlined',                     s:blue,     '',         'none')
-call s:HL('Error',                          s:yellow,      s:gray1,    '')
-call s:HL('Todo',                           s:orange,   s:gray1,    'italic')
+call s:HL('Error',                          s:br_yellow,      s:gray1,    '')
+call s:HL('Todo',                           s:br_yellow,   s:gray1,    'italic')
 
 " CSS
 call s:HL('cssAttrComma',                   s:gray5,    '',         '')
