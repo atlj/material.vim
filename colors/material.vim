@@ -100,9 +100,9 @@ call s:HL('WildMenu',                       s:gray2,    s:cyan,	    '')
 
 " Standard Syntax
 call s:HL('Comment',                        s:gray4,    '',         'italic')
-call s:HL('Constant',                       s:cyan,   '',         '')
-call s:HL('String',                         s:yellow,    '',         '')
-call s:HL('Character',                      s:yellow,    '',         '')
+call s:HL('Constant',                       s:yellow,   '',         '')
+call s:HL('String',                         s:red,    '',         '')
+call s:HL('Character',                      s:red,    '',         '')
 call s:HL('Identifier',                     s:red,      '',         'none')
 call s:HL('Function',                       s:br_yellow,     '',         '')
 call s:HL('Statement',                      s:purple,   '',         'none')
